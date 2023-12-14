@@ -1,4 +1,4 @@
-﻿{% load  static %}
+﻿{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +47,7 @@
     <!-- Preloader Starts -->
     <div class="preloader" id="preloader">
         <div class="logopreloader">
-            <img src="{% static 'assets/img/styleswitcher/logos/logos-dark/orange.png' %}" alt="logo-black">
+            <img src="{{settings.logo.url}}"  width = '200px' alt="logo-black">
         </div>
         <div class="loader" id="loader"></div>
     </div>
@@ -58,41 +58,41 @@
             <h4>STYLE SWITCHER</h4>
             <ul>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('blue'); document.getElementById('logo-light').src='img/styleswitcher/logos/blue.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blue.png';" title="blue" class="color"><img src="{% static 'assets/img/styleswitcher/blue.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('blue'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/blue.png" %}'; document.getElementById('logo-dark'). src='{% static "assets/img/styleswitcher/logos/logos-dark/blue.png" %}'; title="blue" class="color"><img src="{% static 'assets/img/styleswitcher/blue.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('blueviolet'); document.getElementById('logo-light').src='img/styleswitcher/logos/blueviolet.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blueviolet.png';" title="blueviolet" class="color"><img src="{% static 'assets/img/styleswitcher/blueviolet.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('blueviolet'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/blueviolet.png" %}'; document.getElementById('logo-dark'). src='{% static "assets/img/styleswitcher/logos/logos-dark/blueviolet.png" %}'; title="blueviolet" class="color"><img src="{% static 'assets/img/styleswitcher/blueviolet.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('goldenrod'); document.getElementById('logo-light').src='img/styleswitcher/logos/goldenrod.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/goldenrod.png';" title="goldenrod" class="color"><img src="{% static 'assets/img/styleswitcher/goldenrod.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('goldenrod'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/goldenrod.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/goldenrod.png" %}'; title="goldenrod" class="color"><img src="{% static 'assets/img/styleswitcher/goldenrod.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('green'); document.getElementById('logo-light').src='img/styleswitcher/logos/green.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/green.png';" title="green" class="color"><img src="{% static 'assets/img/styleswitcher/green.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('green'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/green.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/green.png" %}'; title="green" class="color"><img src="{% static 'assets/img/styleswitcher/green.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('magenta'); document.getElementById('logo-light').src='img/styleswitcher/logos/magenta.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/magenta.png';" title="magenta" class="color"><img src="{% static 'assets/img/styleswitcher/magenta.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('magenta'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/magenta.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/magenta.png" %}'; title="magenta" class="color"><img src="{% static 'assets/img/styleswitcher/magenta.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('orange'); document.getElementById('logo-light').src='img/styleswitcher/logos/orange.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/orange.png';" title="orange" class="color"><img src="{% static 'assets/img/styleswitcher/orange.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('orange'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/orange.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/orange.png" %}'; title="orange" class="color"><img src="{% static 'assets/img/styleswitcher/orange.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('purple'); document.getElementById('logo-light').src='img/styleswitcher/logos/purple.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/purple.png';" title="purple" class="color"><img src="{% static 'assets/img/styleswitcher/purple.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('purple'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/purple.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/purple.png" %}'; title="purple" class="color"><img src="{% static 'assets/img/styleswitcher/purple.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('red'); document.getElementById('logo-light').src='img/styleswitcher/logos/red.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/red.png';" title="red" class="color"><img src="{% static 'assets/img/styleswitcher/red.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('red'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/red.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/red.png" %}'; title="red" class="color"><img src="{% static 'assets/img/styleswitcher/red.png' %}" alt="" width="30" height="30" /></a>
+                </li>x
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellow'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/yellow.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/yellow.png" %}'; title="yellow" class="color"><img src="{% static 'assets/img/styleswitcher/yellow.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellow'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellow.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellow.png';" title="yellow" class="color"><img src="{% static 'assets/img/styleswitcher/yellow.png' %}" alt="" width="30" height="30" /></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellowgreen'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellowgreen.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellowgreen.png';" title="yellowgreen" class="color"><img src="{% static 'assets/img/styleswitcher/yellowgreen.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen'); document.getElementById('logo-light')".src='{% static "assets/img/styleswitcher/logos/yellowgreen.png" %}'; document.getElementById('logo-dark') .src='{% static "assets/img/styleswitcher/logos/logos-dark/yellowgreen.png" %}'; title="yellowgreen" class="color"><img src="{% static 'assets/img/styleswitcher/yellowgreen.png' %}" alt="" width="30" height="30" /></a>
                 </li>
             </ul>
 
             <p>BODY SKIN</p>
 
-            <label><input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" checked="checked" /> Light</label>
-            <label><input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark" /> Dark</label>
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark"checked="checked" /> Dark</label>     
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_light" value="light"  /> Light</label>
 
             <hr />
 
@@ -130,10 +130,10 @@
                     <div class="logo">
                         <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" href="#mainslider">
                             <!-- Logo White Starts -->
-                            <img id="logo-light" class="logo-light" src="{% static 'assets/img/styleswitcher/logos/orange.png' %}" alt="logo-light" />
+                            <img id="logo-light" class="logo-light" src="{{settings.logo.url}}" alt="logo-light" />
                             <!-- Logo White Ends -->
                             <!-- Logo Black Starts -->
-                            <img id="logo-dark" class="logo-dark" src="{% static 'assets/img/styleswitcher/logos/logos-dark/orange.png' %}" alt="logo-dark" />
+                            <img id="logo-dark" class="logo-dark" src="{{settings.logo.url}}" alt="logo-dark" />
                             <!-- Logo Black Ends -->
                         </a>
                     </div>
@@ -151,13 +151,13 @@
 					<!-- Navigation Menu Starts -->
                     <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
                         <ul class="nav-menu-inner ml-auto">
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#mainslider"><i class="fa fa-home"></i> home</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#about"><i class="fa fa-user"></i> about</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-cog"></i> services</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-image"></i> portfolio</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#team"><i class="fa fa-user"></i> team</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#blog"><i class="fa fa-comments"></i> blog</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#contact"><i class="fa fa-envelope"></i> contact</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#mainslider"><i class="fa fa-home"></i> Главная страница</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#about"><i class="fa fa-user"></i> О нас</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-cog"></i> Сервисы</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-image"></i> Портфолио</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#team"><i class="fa fa-user"></i> Команда</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#blog"><i class="fa fa-comments"></i> Блок</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#contact"><i class="fa fa-envelope"></i> Контакты</a></li>
                         </ul>
                     </div>
 					<!-- Navigation Menu Ends -->
@@ -173,66 +173,29 @@
                 <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
                 <div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
                     <ul>
+                        {% for slide in slide%}
                         <!-- SLIDE  -->
-                        <li data-index="rs-1" data-transition="boxslide" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'assets/img/revolution-slider/slideshow/thumb1.jpg' %}" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                    
+                        <li data-transition="boxslide" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{slide.photos.url}}" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{% static 'assets/img/revolution-slider/slideshow/slideshow1.jpg' %}" alt="" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <img src="{{slide.photos.url}}" alt="" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">WE ARE SALIMO
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">{{slide.name}}
                             </div>
 
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0 nowrap-normal text-center px-15" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">CREATIVE ONE PAGE TEMPLATE
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0 nowrap-normal text-center px-15" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">{{slide.descriptions}}
                             </div>
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
                             </div>
                             <!-- LAYER NR. 4 -->
-                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','210','210','180']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#about" class="custom-button slider-button scroll-to-target">learn more about us</a></div>
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','210','210','180']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#about" class="custom-button slider-button scroll-to-target">Информатция о нас</a></div>
                         </li>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-2" data-transition="3dcurtain-vertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'assets/img/revolution-slider/slideshow/thumb2.jpg' %}" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="{% static 'assets/img/revolution-slider/slideshow/slideshow2.jpg' %}" alt="" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">WE ARE CREATIVE
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0 nowrap-normal text-center px-15" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">TEAM WITH BIG TALENTS
-                            </div>
-
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
-                            </div>
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','210','210','180']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#about" class="custom-button slider-button scroll-to-target">learn more about us</a></div>
-                        </li>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-3" data-transition="3dcurtain-horizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'assets/img/revolution-slider/slideshow/thumb3.jpg' %}" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="{% static 'assets/img/revolution-slider/slideshow/slideshow3.jpg' %}" alt="" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">WE ARE THE BEST
-                            </div>
-
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0 nowrap-normal text-center px-15" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">COMPANY IN THE WORLD
-                            </div>
-
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
-                            </div>
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','210','210','180']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#about" class="custom-button slider-button scroll-to-target">learn more about us</a></div>
-                        </li>
+                        {% endfor %}
                     </ul>
                     <div class="tp-static-layers"></div>
                 </div>
@@ -246,8 +209,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>About</span> Us</h1>
-                    <h4>Who We Are</h4>
+                    <h1><span>Обо</span> нас</h1>
+                    <h4>Кто мы </h4> 
                 </div>
                 <!-- Main Heading Ends -->
                 <!-- Divider Starts -->
@@ -260,36 +223,36 @@
                 <!-- About Content Starts -->
                 <div class="row about-content">
                     <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
-                        <h3 class="title-about">WE ARE <strong>SALIMO</strong></h3>
+                        <h3 class="title-about">мы   <strong>{{about.name}}</strong></h3>
                         <hr>
-                        <p>We are a leading company sit amet, consectetur adipisicing elit. Minus obcaecati pariatur officiis molestias eveniet harum laudantium obcaecati pariatur officiis molestias eveniet harum laudantium sed optio iste. </p>
+                        <p>{{about.disc}}</p>
 						<!-- Tabs Heading Starts -->
                         <ul class="nav nav-tabs">
-                            <li><a class="active" data-toggle="tab" href="#menu1">Our Mission</a></li>
-                            <li><a data-toggle="tab" href="#menu2">Our advantages</a></li>
-                            <li><a data-toggle="tab" href="#menu3">Our guarantees</a></li>
+                            <li><a class="active" data-toggle="tab" href="#menu1">миссия</a></li>
+                            <li><a data-toggle="tab" href="#menu2">преймушества</a></li>
+                            <li><a data-toggle="tab" href="#menu3">гарантия</a></li>
                         </ul>
                         <!-- Tabs Heading Ends -->
                         <!-- Tabs Content Starts -->
                         <div class="tab-content">
                             <div id="menu1" class="tab-pane fade in active">
-                                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                                <p>{{about.disk_mission}}</p>
                             </div>
                             <div id="menu2" class="tab-pane fade">
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>{{about.disk_prem}}</p>
                             </div>
                             <div id="menu3" class="tab-pane fade">
-                                <p>Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                                <p>{{about.disk_gorent}}</p>
                             </div>
                         </div>
                         <!-- Tabs Content Ends -->
-                        <a class="custom-button scroll-to-target" href="#portfolio">Our Portfolio</a>
+                        <a class="custom-button scroll-to-target" href="#portfolio">Наше Портфолио</a>
                     </div>
                     <div class="col-md-12 col-lg-6 about-right">
 						<div class="about-right-side">
-							<img class="img-fluid" src="{% static 'assets/img/about.jpg' %}" alt="">
+							<img class="img-fluid" src="{{about.image.url}}" alt="">
 						</div>
-                    </div>
+                    </div>  
                 </div>
                 <!-- About Content Ends -->
             </div>
@@ -305,18 +268,18 @@
                     <div class="row">
                         <!-- Image Starts -->
                         <div class="col-md-12 col-lg-12 col-xl-5">
-                            <img class="img-fluid projectmanagerpicture" src="{% static 'assets/img/projectmanager.jpg' %}" alt="project manager">
+                            <img class="img-fluid projectmanagerpicture" src="{{employee.image.url}}" alt="project manager">
                         </div>
                         <!-- Image Ends -->
                         <!-- Details Starts -->
                         <div class="col-md-12 col-lg-12 col-xl-6 offset-xl-1">
-                            <h1>Project Manager</h1>
-                            <h3>Miss Katherina Hale</h3>
+                            <h1>{{employee.rols}}</h1>
+                            <h3>{{employee.names}}</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus obcaecati pariatur officiis molestias eveniet harum laudantium sed optio iste. Iste, alias, non libero recusandae fugiat praesentium delectus inventore accusamus veniam!
+                               {{employee.diks}}
                             </p>
                             <blockquote>
-                                " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia "
+                                "{{employee.diks2}}
                             </blockquote>
                             <!-- Social Media Starts -->
                             <div class="social-icons">
@@ -356,8 +319,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>Our</span> Services</h1>
-                    <h4>What We Doing</h4>
+                    <h1><span>Наши</span> услуги</h1>
+                    <h4>То что мы делаем</h4>
                 </div>
                 <!-- Main Heading Starts -->
                 <!-- Divider Starts -->
@@ -370,86 +333,20 @@
                 <!-- Services Starts -->
                 <div class="row services-box">
                     <!-- Service Item Starts -->
+                    {% for ser in ser%}
                     <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
                         <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-leaf" data-headline="Creative Solutions"></span>
+                        <span class="services-box-item-cover fa fa-leaf" data-headline={{ser.servides}}></span>
                         <!-- Service Item Cover Ends -->
                         <!-- Service Item Content Starts -->
                         <div class="services-box-item-content fa fa-leaf">
-                            <h2>Creative Solutions</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+                            <h2>{{ser.servides}}</h2>
+                            <p>{{ser.dirs}}</p>
                         </div>
                         <!-- Service Item Content Ends -->
                     </div>
                     <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-anchor" data-headline="Featured Services"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-anchor">
-                            <h2>Featured Services</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-comments-o" data-headline="Custom Design"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-comments-o">
-                            <h2>Custom Design</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-support" data-headline="Technical Support"></span>
-                        <!-- Service Item Cover Ends -->
-                        <div class="services-box-item-content fa fa-support">
-                            <h2>Technical Support</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-cogs" data-headline="Responsive Design"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-cogs">
-                            <h2>Responsive Design</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-12 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-file-pdf-o" data-headline="Well Documented"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-file-pdf-o">
-                            <h2>Well Documented</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
+                    {% endfor %}
 
                 </div>
                 <!-- Services Ends -->
@@ -463,8 +360,8 @@
                 <div class="container">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>Happy</span> Customers</h1>
-                        <h4>Testimonials</h4>
+                        <h1><span>счастливые </span>клиенты</h1>
+                        <h4>Отзывы</h4>
                     </div>
                     <!-- Main Heading Starts -->
                     <!-- Blockquotes Starts -->
@@ -477,37 +374,20 @@
                             <li data-target="#quote-carousel" data-slide-to="2"></li>
                         </ol>
                         <!-- Indicators Ends -->
+                        {% for rev in rev %}
                         <div class="carousel-inner">
                             <!-- Quote #1 Starts -->
+                            {
                             <div class="carousel-item active">
                                 <blockquote>
-                                    <img class="rounded-circle img-fluid" src="{% static 'assets/img/testimonial/client1.jpg' %}" alt="client">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu nt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat</p>
-                                    <h5>Miss Elina Pool</h5>
-                                    <h6>Web Developer - Adobe</h6>
+                                    <img class="rounded-circle img-fluid" src="{{rev.image.url}}" alt="client">
+                                    <p>{{rev.dick}}</p>
+                                    <h5>{{rev.client_name}}</h5>
+                                    <h6>{{rev.servid}}</h6>
                                 </blockquote>
                             </div>
                             <!-- Quote #1 Ends -->
-                            <!-- Quote #2 Starts -->
-                            <div class="carousel-item">
-                                <blockquote>
-                                    <img class="rounded-circle img-fluid" src="{% static 'assets/img/testimonial/client2.jpg' %}" alt="client">
-                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                                    <h5>Mr. Antoine Varane</h5>
-                                    <h6>Sales Manager - Twitter</h6>
-                                </blockquote>
-                            </div>
-                            <!-- Quote #2 Ends -->
-                            <!-- Quote #3 Starts -->
-                            <div class="carousel-item">
-                                <blockquote>
-                                    <img class="rounded-circle img-fluid" src="{% static 'assets/img/testimonial/client3.jpg' %}" alt="client">
-                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                    <h5>Miss Lucy Walker</h5>
-                                    <h6>Project Manager - Envato</h6>
-                                </blockquote>
-                            </div>
-                            <!-- Quote #3 Ends -->
+                            {% endfor %}
                         </div>
                         <!-- Wrapper For Sliders Ends -->
                     </div>
@@ -523,8 +403,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>Our</span> Portfolio</h1>
-                    <h4>Our latest Works</h4>
+                    <h1><span>Наше </span>Портфолио</h1>
+                    <h4>наши послебние работы </h4>
                 </div>
                 <!-- Main Heading Starts -->
                 <!-- Divider Starts -->
@@ -702,8 +582,8 @@
                 <div class="container">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>Cool</span> Facts</h1>
-                        <h4>our numbers</h4>
+                        <h1><span>крутые </span>факты</h1>
+                        <h4>наши номера </h4>
                     </div>
                     <!-- Main Heading Starts -->
                     <!-- Fact Badges Starts -->
@@ -759,8 +639,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>Our</span> Team</h1>
-                    <h4>Keep in touch</h4>
+                    <h1><span>Наша  </span>команда</h1>
+                    <h4>поддерживать связь</h4>
                 </div>
                 <!-- Main Heading Ends -->
                 <!-- Divider Starts -->
@@ -776,12 +656,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="team-member">
                             <!-- Team Member Picture Starts -->
-                            <a title="Maryana Mori // Manager" href="{% static 'assets/img/team/member1.jpg' %}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{% static 'assets/img/team/member1.jpg' %}" alt="team member"></a>
+                            <a title="Maryana Mori // Manager" href="{{employee.photo1.url}}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{{employee.photo1.url}}" alt="team member"></a>
                             <!-- Team Member Picture Ends -->
                             <!-- Team Member Details Starts -->
                             <div class="team-member-caption social-icons">
-                                <h4>Maryana Mori</h4>
-                                <p>Manager</p>
+                                <h4>{{employee.name1}}</h4>
+                                <p>{{employee.rols1}}</p>
                                 <ul class="list list-inline social">
                                     <li>
                                         <a href="#" class="fa fa-facebook"></a>
@@ -802,12 +682,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="team-member">
                             <!-- Team Member Picture Starts -->
-                            <a title="Marco Verratti // Co Founder" href="{% static 'assets/img/team/member2.jpg' %}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{% static 'assets/img/team/member2.jpg' %}" alt="team member"></a>
+                            <a title="Marco Verratti // Co Founder" href="{{employee.photo2.url}}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{{employee.photo2.url}}" alt="team member"></a>
                             <!-- Team Member Picture Ends -->
                             <!-- Team Member Details Starts -->
                             <div class="team-member-caption social-icons">
-                                <h4>Marco Verratti</h4>
-                                <p>Co Founder</p>
+                                <h4>{{employee.name2}}</h4>
+                                <p>{{employee.rols2}}</p>
                                 <ul class="list list-inline social">
                                     <li>
                                         <a href="#" class="fa fa-facebook"></a>
@@ -829,12 +709,12 @@
                         <!-- Team Member-->
                         <div class="team-member">
                             <!-- Team Member Picture Starts -->
-                            <a title="Emilia Bella // Sales Manager" href="{% static 'assets/img/team/member3.jpg' %}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{% static 'assets/img/team/member3.jpg' %}" alt=""></a>
+                            <a title="Emilia Bella // Sales Manager" href="{{employee.photo3.url}}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{{employee.photo3.url}}" alt=""></a>
                             <!-- Team Member Picture Ends -->
                             <!-- Team Member Details Starts -->
                             <div class="team-member-caption social-icons">
-                                <h4>Emilia Bella</h4>
-                                <p>Sales Manager</p>
+                                <h4>{{employee.name3}}</h4>
+                                <p>{{employee.rols3}}</p>
                                 <ul class="list list-inline social">
                                     <li>
                                         <a href="#" class="fa fa-facebook"></a>
@@ -855,12 +735,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="team-member">
                             <!-- Team Member Picture Starts -->
-                            <a title="Antonio Conte // Director" href="{% static 'assets/img/team/member4.jpg' %}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{% static 'assets/img/team/member4.jpg' %}" alt="team member"></a>
+                            <a title="Antonio Conte // Director" href="{{employee.photo4.url}}" data-gal="magnific-pop-up[team]" class="team-member-img-wrap"><img src="{{employee.photo4.url}}" alt="team member"></a>
                             <!-- Team Member Picture Ends -->
                             <!-- Team Member Details Starts -->
                             <div class="team-member-caption social-icons">
-                                <h4>Antonio Conte</h4>
-                                <p>Director</p>
+                                <h4>{{employee.name4}}</h4>
+                                <p>{{employee.rols4}}</p>
                                 <ul class="list list-inline social">
                                     <li>
                                         <a href="#" class="fa fa-facebook"></a>
@@ -890,12 +770,12 @@
                 <div class="container">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>our</span> newsletter</h1>
-                        <h4>Keep in touch</h4>
+                        <h1><span>Наши </span>Новостная рассылка</h1>
+                        <h4>Поддерживать связь</h4>
                     </div>
                     <!-- Main Heading Ends -->
                     <div class="newsletter-content">
-                        <p class="text-center">Sign up to our newsletter subscription and be the first to know about<br> Important news <span> & </span> Amazing offers <span> & </span>Discounts</p>
+                        <p class="text-center">Подпишитесь на нашу рассылку новостей и узнавайте о новостях первыми<br> Важные новости <span> & </span> Удивительные предложение <span> & </span>Скидки</p>
                         <!-- Newsletter Form Starts -->
                         <form class="form-inputs">
                             <!-- Newsletter Form Input Field Starts -->
@@ -909,7 +789,7 @@
                             </div>
                             <!-- Newsletter Form Input Field Ends -->
                             <!-- Newsletter Form Submit Button Starts -->
-                            <button id="submit" name="submit" type="submit" class="custom-button" title="Send">Subscribe Now</button>
+                            <button id="submit" name="submit" type="submit" class="custom-button" title="Send">Подпишитесь Сайчас</button>
                             <!-- Newsletter Form Submit Button Ends -->
                         </form>
                         <!-- Newsletter Form Ends -->
@@ -925,8 +805,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>Blog</span> Posts</h1>
-                    <h4>Latest Articles</h4>
+                    <h1><span>Блоги </span>Посты</h1>
+                    <h4>Последние статьи</h4>
                 </div>
                 <!-- Main Heading Starts -->
                 <!-- Divider Starts -->
@@ -937,81 +817,34 @@
                 </div>
                 <!-- Divider Ends -->
                 <div class="row latest-posts-content">
+                    {% for blog in blog%}
                     <!-- Article Starts -->
                     <div class="col-sm-12 col-md-4 col-xs-12">
                         <div class="latest-post">
                             <!-- Featured Image Starts -->
-                            <a class="img-thumb" href="blog-post.html"><img class="img-fluid" src="{% static 'assets/img/blog/blog-post-small-1.jpg' %}" alt="img"></a>
+                            <a class="img-thumb" href="blog-post.html"><img class="img-fluid" src="{{blog.photo.url}}" alt="img"></a>
                             <!-- Featured Image Ends -->
                             <!-- Article Content Starts -->
                             <div class="post-body">
                                 <h4 class="post-title">
-                                    <a href="blog-post.html">how to be a good freelancer ?</a>
+                                    <a href="blog-post.html">{{blog.name}}</a>
                                 </h4>
                                 <div class="post-text">
-                                    <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
+                                    <p>{{blog.description}}</p>
                                 </div>
                             </div>
                             <!-- Post Date Starts -->
                             <div class="post-date">
-                                <span>18</span>
-                                <span>AUG</span>
+                                <span>{{blog.data}}</span>
+                                <span>{{blog.mount}}</span>
                             </div>
+                            {% endfor %}
                             <!-- Post Date Ends -->
                             <!-- Article Content Ends -->
                         </div>
                     </div>
                     <!-- Article Ends -->
-                    <!-- Article Starts -->
-                    <div class="col-sm-12 col-md-4 col-xs-12">
-                        <div class="latest-post">
-                            <!-- Featured Image Starts -->
-                            <a class="img-thumb" href="blog-post.html"><img class="img-fluid" src="{% static 'assets/img/blog/blog-post-small-2.jpg' %}" alt="img"></a>
-                            <!-- Featured Image Ends -->
-                            <!-- Article Content Starts -->
-                            <div class="post-body">
-                                <h4 class="post-title">
-                                    <a href="blog-post.html">Collaboration with Envato</a>
-                                </h4>
-                                <div class="post-text">
-                                    <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
-                                </div>
-                            </div>
-                            <!-- Post Date Starts -->
-                            <div class="post-date">
-                                <span>23</span>
-                                <span>JUN</span>
-                            </div>
-                            <!-- Post Date Ends -->
-                            <!-- Article Content Ends -->
-                        </div>
-                    </div>
-                    <!-- Article Ends -->
-                    <!-- Article Starts -->
-                    <div class="col-sm-12 col-md-4 col-xs-12">
-                        <div class="latest-post">
-                            <!-- Featured Image Starts -->
-                            <a class="img-thumb" href="blog-post.html"><img class="img-fluid" src="{% static 'assets/img/blog/blog-post-small-3.jpg' %}" alt="img"></a>
-                            <!-- Featured Image Ends -->
-                            <!-- Article Content Starts -->
-                            <div class="post-body">
-                                <h4 class="post-title">
-                                    <a href="blog-post.html">why themeforest is best ?</a>
-                                </h4>
-                                <div class="post-text">
-                                    <p>incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud...</p>
-                                </div>
-                            </div>
-                            <!-- Post Date Starts -->
-                            <div class="post-date">
-                                <span>01</span>
-                                <span>JAN</span>
-                            </div>
-                            <!-- Post Date Ends -->
-                            <!-- Article Content Ends -->
-                        </div>
-                    </div>
-                    <!-- Article Ends -->
+
 					<div class="mx-auto">
                         <a class="custom-button link-blog" href="blog.html">See all Posts</a>
                     </div>
@@ -1078,19 +911,19 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="info-map-boxes-item fa fa-clock-o">
                             <h1>Working Hours</h1>
-                            <p>Monday-Thursday : 08:00–17:00
-                                <br>Friday & Saturday : 08:00–12:30
-                                <br>Sunday - Close</p>
+                            <p>Monday-Thursday : {{settings.work_hours1}}
+                                <br>Friday & Saturday : {{settings.work_hours2}}
+                                <br>Sunday - закрыто</p>
                         </div>
                     </div>
                     <!-- Left Info Map Box Ends -->
                     <!-- Right Info Map Box Starts -->
                     <div class="col-md-6 col-sm-12">
                         <div class="info-map-boxes-item fa fa-phone">
-                            <h1>Phone &amp; Online</h1>
-                            <p>Phone : +39 1873 2878
-                                <br>Fax : +49 (0) 123 456789-15
-                                <br><a href="#">salimo@yourdomain.com</a></p>
+                            <h1>Онлайн &amp; Контакты</h1>
+                            <p>Тел : {{settings.namber}}
+                                <br>WhatsApp : {{settings.what_number}}
+                                <br><a href="#">{{settings.email}}</a></p>
                         </div>
                     </div>
                     <!-- Right Info Map Box Ends -->
@@ -1197,7 +1030,7 @@
                 <div class="social-icons">
                     <ul class="social">
                         <li>
-                            <a class="twitter" href="#" title="twitter"></a>
+                            <a class="twitter" href="#" title="{{settings.twitter}}"></a>
                         </li>
                         <li>
                             <a class="facebook" href="#" title="facebook"></a>
@@ -1279,7 +1112,7 @@
                 } else {
                     revapi4 = tpj("#rev_slider").show().revolution({
                         sliderType: "standard",
-                        jsFileLocation: "{% static 'assets/js/plugins/revolution/js/",
+                        jsFileLocation: "js/plugins/revolution/js/",
                         dottedOverlay: "none",
                         sliderLayout: "fullscreen",
                         delay: 9000,

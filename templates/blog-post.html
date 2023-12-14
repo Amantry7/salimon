@@ -1,4 +1,4 @@
-﻿{% load static%}
+﻿{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,30 +11,30 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
 
     <!-- Template CSS Files -->
-    <link rel="stylesheet" type="text/css" href="{% static assets/css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static assets/css/font-awesome.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static assets/css/magnific-popup.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static assets/css/style.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static assets/css/skins/yellow.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/magnific-popup.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/skins/yellow.css' %}" />
 
     <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="{% static assets/css/skins/blue.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="{% static assets/css/skins/blueviolet.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="{% static assets/css/skins/goldenrod.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="{% static assets/css/skins/green.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="{% static assets/css/skins/magenta.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="{% static assets/css/skins/orange.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="{% static assets/css/skins/purple.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="{% static assets/css/skins/red.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="{% static assets/css/skins/yellow.css' %}" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="{% static assets/css/skins/yellowgreen.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static assets/css/styleswitcher.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="{% static 'assets/css/skins/blue.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="{% static 'assets/css/skins/blueviolet.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="{% static 'assets/css/skins/goldenrod.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="{% static 'assets/css/skins/green.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="{% static 'assets/css/skins/magenta.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="{% static 'assets/css/skins/orange.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="{% static 'assets/css/skins/purple.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="{% static 'assets/css/skins/red.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="{% static 'assets/css/skins/yellow.css' %}" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="{% static 'assets/css/skins/yellowgreen.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/styleswitcher.css' %}" />
 
     <!-- Template JS Files -->
-    <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/modernizr.js' %}"></script>
 
 </head>
 
@@ -42,7 +42,7 @@
     <!-- Preloader Starts -->
     <div class="preloader" id="preloader">
         <div class="logopreloader">
-            <img src="{% static 'img/styleswitcher/logos/yellow.png' %}" alt="logo-black">
+            <img src="{% static 'assets/img/styleswitcher/logos/yellow.png' %}" alt="logo-black">
         </div>
         <div class="loader" id="loader"></div>
     </div>
@@ -53,34 +53,34 @@
             <h4>STYLE SWITCHER</h4>
             <ul>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('blue'); document.getElementById('logo-light').src='img/styleswitcher/logos/blue.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blue.png' %}';" title="blue" class="color"><img src="{% static 'img/styleswitcher/blue.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('blue'); document.getElementById('logo-light').src='img/styleswitcher/logos/blue.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blue.png';" title="blue" class="color"><img src="{% static 'assets/img/styleswitcher/blue.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('blueviolet'); document.getElementById('logo-light').src='img/styleswitcher/logos/blueviolet.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blueviolet.png' %}';" title="blueviolet" class="color"><img src="{% static 'img/styleswitcher/blueviolet.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('blueviolet'); document.getElementById('logo-light').src='img/styleswitcher/logos/blueviolet.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blueviolet.png';" title="blueviolet" class="color"><img src="{% static 'assets/img/styleswitcher/blueviolet.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('goldenrod'); document.getElementById('logo-light').src='img/styleswitcher/logos/goldenrod.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/goldenrod.png' %}';" title="goldenrod" class="color"><img src="{% static 'img/styleswitcher/goldenrod.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('goldenrod'); document.getElementById('logo-light').src='img/styleswitcher/logos/goldenrod.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/goldenrod.png';" title="goldenrod" class="color"><img src="{% static 'assets/img/styleswitcher/goldenrod.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('green'); document.getElementById('logo-light').src='img/styleswitcher/logos/green.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/green.png' %}';" title="green" class="color"><img src="{% static 'img/styleswitcher/green.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('green'); document.getElementById('logo-light').src='img/styleswitcher/logos/green.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/green.png';" title="green" class="color"><img src="{% static 'assets/img/styleswitcher/green.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('magenta'); document.getElementById('logo-light').src='img/styleswitcher/logos/magenta.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/magenta.png' %}';" title="magenta" class="color"><img src="{% static 'img/styleswitcher/magenta.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('magenta'); document.getElementById('logo-light').src='img/styleswitcher/logos/magenta.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/magenta.png';" title="magenta" class="color"><img src="{% static 'assets/img/styleswitcher/magenta.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('orange'); document.getElementById('logo-light').src='img/styleswitcher/logos/orange.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/orange.png' %}';" title="orange" class="color"><img src="{% static 'img/styleswitcher/orange.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('orange'); document.getElementById('logo-light').src='img/styleswitcher/logos/orange.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/orange.png';" title="orange" class="color"><img src="{% static 'assets/img/styleswitcher/orange.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('purple'); document.getElementById('logo-light').src='img/styleswitcher/logos/purple.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/purple.png' %}';" title="purple" class="color"><img src="{% static 'img/styleswitcher/purple.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('purple'); document.getElementById('logo-light').src='img/styleswitcher/logos/purple.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/purple.png';" title="purple" class="color"><img src="{% static 'assets/img/styleswitcher/purple.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('red'); document.getElementById('logo-light').src='img/styleswitcher/logos/red.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/red.png' %}';" title="red" class="color"><img src="{% static 'img/styleswitcher/red.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('red'); document.getElementById('logo-light').src='img/styleswitcher/logos/red.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/red.png';" title="red" class="color"><img src="{% static 'assets/img/styleswitcher/red.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellow'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellow.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellow.png' %}';" title="yellow" class="color"><img src="{% static 'img/styleswitcher/yellow.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('yellow'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellow.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellow.png';" title="yellow" class="color"><img src="{% static 'assets/img/styleswitcher/yellow.png' %}" alt="" width="30" height="30" /></a>
                 </li>
                 <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellowgreen'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellowgreen.png' %}'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellowgreen.png' %}';" title="yellowgreen" class="color"><img src="{% static 'img/styleswitcher/yellowgreen.png' %}" alt="" width="30" height="30" /></a>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellowgreen.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellowgreen.png';" title="yellowgreen" class="color"><img src="{% static 'assets/img/styleswitcher/yellowgreen.png' %}" alt="" width="30" height="30" /></a>
                 </li>
             </ul>
 
@@ -99,11 +99,11 @@
 
             <p class="separator">SEPARATOR <span class="hot">HOT</span></p>
             <span class="info">Select and scroll to see the changes</span>
-            <label><input class="separator_switch" type="radio" name="separator_style" id="is_normal" value="normal"  /> <img alt="separator" width="20" height="20" src="{% static 'img/styleswitcher/separators/1.jpg" /></label>
-            <label><input class="separator_switch" type="radio" name="separator_style" id="is_skew" value="skew" /> <img alt="separator" width="20" height="20" src="{% static 'img/styleswitcher/separators/2.jpg" /></label>
-            <label><input class="separator_switch" type="radio" name="separator_style" id="is_reversed_skew" value="reversed-skew" /> <img alt="separator" width="20" height="20" src="{% static 'img/styleswitcher/separators/3.jpg" /></label>
-            <label><input class="separator_switch" type="radio" name="separator_style" id="is_double_diagonal" value="double-diagonal" checked="checked" /> <img alt="separator" width="20" height="20" src="{% static 'img/styleswitcher/separators/4.jpg" /></label>
-            <label><input class="separator_switch" type="radio" name="separator_style" id="is_big_triangle" value="big-triangle"  /> <img alt="separator" width="20" height="20" src="{% static 'img/styleswitcher/separators/5.jpg" /></label>
+            <label><input class="separator_switch" type="radio" name="separator_style" id="is_normal" value="normal"  /> <img alt="separator" width="20" height="20" src="{% static 'assets/img/styleswitcher/separators/1.jpg' %}" /></label>
+            <label><input class="separator_switch" type="radio" name="separator_style" id="is_skew" value="skew" /> <img alt="separator" width="20" height="20" src="{% static 'assets/img/styleswitcher/separators/2.jpg' %}" /></label>
+            <label><input class="separator_switch" type="radio" name="separator_style" id="is_reversed_skew" value="reversed-skew" /> <img alt="separator" width="20" height="20" src="{% static 'assets/img/styleswitcher/separators/3.jpg' %}" /></label>
+            <label><input class="separator_switch" type="radio" name="separator_style" id="is_double_diagonal" value="double-diagonal" checked="checked" /> <img alt="separator" width="20" height="20" src="{% static 'assets/img/styleswitcher/separators/4.jpg' %}" /></label>
+            <label><input class="separator_switch" type="radio" name="separator_style" id="is_big_triangle" value="big-triangle"  /> <img alt="separator" width="20" height="20" src="{% static 'assets/img/styleswitcher/separators/5.jpg' %}" /></label>
 
             <hr />
 
@@ -125,10 +125,10 @@
                     <div class="logo">
                         <a class="navbar-brand link-menu nav-external" href="index-slideshow.html">
                             <!-- Logo White Starts -->
-                            <img id="logo-light" class="logo-light" src="{% static 'img/styleswitcher/logos/yellow.png' %}" alt="logo-light" />
+                            <img id="logo-light" class="logo-light" src="{% static 'assets/img/styleswitcher/logos/yellow.png' %}" alt="logo-light" />
                             <!-- Logo White Ends -->
                             <!-- Logo Black Starts -->
-                            <img id="logo-dark" class="logo-dark" src="{% static 'img/styleswitcher/logos/logos-dark/yellow.png' %}" alt="logo-dark" />
+                            <img id="logo-dark" class="logo-dark" src="{% static 'assets/img/styleswitcher/logos/logos-dark/yellow.png' %}" alt="logo-dark" />
                             <!-- Logo Black Ends -->
                         </a>
                     </div>
@@ -188,7 +188,7 @@
 							<!-- Figure Starts -->
 							<figure>
 								<a href="blog-post.html">
-									<img class="img-responsive" src="{% static 'img/blog/blog-post-1.jpg" alt="">
+									<img class="img-responsive" src="{% static 'assets/img/blog/blog-post-1.jpg' %}" alt="">
 								</a>
 							</figure>
 							<!-- Figure Ends -->
@@ -213,7 +213,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 								<li>
 									<!-- Comment Starts -->
 									<div class="comment">
-										<img class="comment-avatar pull-left" alt="" src="{% static 'img/blog/user1.jpg">
+										<img class="comment-avatar pull-left" alt="" src="{% static 'assets/img/blog/user1.jpg' %}">
 										<div class="comment-body">
 											<div class="meta-data">
 												<span class="comment-author">Lina Marzouki</span>
@@ -231,7 +231,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 										<li>
 											<!-- Comment Starts -->
 											<div class="comment">
-												<img class="comment-avatar pull-left" alt="" src="{% static 'img/blog/user2.jpg">
+												<img class="comment-avatar pull-left" alt="" src="{% static 'assets/img/blog/user2.jpg' %}">
 												<div class="comment-body">
 													<div class="meta-data">
 														<span class="comment-author">Rawia Chniti</span>
@@ -249,7 +249,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 									</ul>
 									<!-- Comment Starts -->
 									<div class="comment">
-										<img class="comment-avatar pull-left" alt="" src="{% static 'img/blog/user3.jpg">
+										<img class="comment-avatar pull-left" alt="" src="{% static 'assets/img/blog/user3.jpg' %}">
 										<div class="comment-body">
 											<div class="meta-data">
 												<span class="comment-author">Slim Hamdi</span>
@@ -331,7 +331,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 							<li>
 								<div class="posts-thumb pull-left"> 
 									<a href="blog-post.html">
-										<img alt="img" src="{% static 'img/blog/blog-post-thumb-1.jpg">
+										<img alt="img" src="{% static 'assets/img/blog/blog-post-thumb-1.jpg' %}">
 									</a>
 								</div>
 								<div class="post-info">
@@ -349,7 +349,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 							<li>
 								<div class="posts-thumb pull-left"> 
 									<a href="blog-post-light.html">
-										<img alt="img" src="{% static 'img/blog/blog-post-thumb-2.jpg">
+										<img alt="img" src="{% static 'assets/img/blog/blog-post-thumb-2.jpg' %}">
 									</a>
 								</div>
 								<div class="post-info">
@@ -367,7 +367,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 							<li>
 								<div class="posts-thumb pull-left"> 
 									<a href="blog-post-light.html">
-										<img alt="img" src="{% static 'img/blog/blog-post-thumb-3.jpg">
+										<img alt="img" src="{% static 'assets/img/blog/blog-post-thumb-3.jpg' %}">
 									</a>
 								</div>
 								<div class="post-info">
@@ -455,19 +455,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     <!-- Wrapper Ends -->
 
     <!-- Template JS Files -->
-	<script type="text/javascript" src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/plugins/jquery.easing.1.3.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/plugins/bootstrap.bundle.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/plugins/jquery.bxslider.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/plugins/jquery.filterizr.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/plugins/jquery.magnific-popup.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/plugins/jquery.singlePageNav.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'assets/js/jquery-2.2.4.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins/jquery.easing.1.3.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins/jquery.bxslider.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins/jquery.filterizr.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins/jquery.singlePageNav.min.js' %}"></script>
 
     <!-- Live Style Switcher JS File - only demo -->
-    <script type="text/javascript" src="{% static 'js/styleswitcher.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/styleswitcher.js' %}"></script>
 
     <!-- Main JS Initialization File -->
-    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
 
     <!-- Revolution Slider Initialization Ends -->
 </body>

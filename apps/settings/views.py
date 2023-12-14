@@ -1,9 +1,16 @@
 from django.shortcuts import render
-
+from apps.settings.models import *
 # Create your views here.
 def index(request):
+    about = About.objects.latest('id')
+    settings = Settings.objects.latest('id')
+    employee = Employee.objects.latest('id')
+    slide = Slide.objects.all()
+    ser = Servides.objects.all()
+    rev = Reviews.objects.all()
+    blog = Blogs.objects.all()    
+        
     return render(request, 'index-slideshow.html', locals())
-def index1(request):
+
+def blog(request):
     return render(request, 'blog.html', locals())
-def index2(request):
-    return render(request, "blog-post.html", locals())

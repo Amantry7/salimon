@@ -9,7 +9,7 @@ def index(request):
     ser = Servides.objects.all()
     rev = Reviews.objects.all()
     blog = Blogs.objects.all()    
-        
+    project = Project.objects.all()    
     return render(request, 'index-slideshow.html', locals())
 
 def blog(request):

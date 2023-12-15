@@ -9,6 +9,8 @@ admin.site.register(Slide)
 admin.site.register(Servides)
 admin.site.register(Reviews)
 admin.site.register(Blogs)
+admin.site.register(Project)
+
 
 
 

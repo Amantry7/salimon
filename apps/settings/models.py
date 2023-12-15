@@ -47,6 +47,23 @@ class Settings(models.Model):
     youtube = models.URLField(
         verbose_name='youtube'
     )
+    project= models.CharField(
+        max_length=255,
+        verbose_name='количкества сделаных проектов'      
+    )
+    hours_work = models.CharField(
+        max_length=255,
+        verbose_name='количкества рабочих часов')
+    office= models.CharField(
+        max_length=255,
+        verbose_name='количкества офисов'  )
+    clints = models.CharField(
+        max_length= 255,
+        verbose_name= "количества клиетов"
+    )
+    video = models.URLField(
+        verbose_name='промо ролик'
+    )
     def __str__(self):
         return f"{self.name}"
     class Meta:
@@ -134,3 +151,13 @@ class Blogs(models.Model):
     class Meta():
         verbose_name='пост'
         verbose_name_plural="посты"
+        
+class Project(models.Model):
+    project_name = models.CharField(max_length=255, verbose_name='название проэкта')
+    image = models.ImageField(upload_to='proj_photo', verbose_name='фото проэкта')
+    disk = models.TextField( verbose_name='описание проекта')
+    def __str__(self):
+        return f"{self.project_name}"
+    class Meta():
+        verbose_name='проэкт'
+        verbose_name_plural="проэкты"

@@ -356,7 +356,7 @@
         <!-- Testimonials Section Starts -->
         <section class="testimonials">
             <div class="section-overlay">
-                <!-- Container Starts -->
+                <!-- Container Starts -->    
                 <div class="container">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
@@ -374,7 +374,7 @@
                             <li data-target="#quote-carousel" data-slide-to="2"></li>
                         </ol>
                         <!-- Indicators Ends -->
-                        {% for rev in rev %}
+                        
                         <div class="carousel-inner">
                             <!-- Quote #1 Starts -->
                             {
@@ -387,8 +387,18 @@
                                 </blockquote>
                             </div>
                             <!-- Quote #1 Ends -->
-                            {% endfor %}
+                            
                         </div>
+                        {% for rev in rev_slider_wrapper %}
+                            <div class="carousel-item">
+                                <blockquote>
+                                    <img class="rounded-circle img-fluid" src="{{rev.image.url}}" alt="client">
+                                    <p>{{rev.dick}}</p>
+                                    <h5>{{rev.client_name}}</h5>
+                                    <h6>{{ser.servides}}</h6>
+                                </blockquote>
+                            </div> 
+                            {% endfor %}
                         <!-- Wrapper For Sliders Ends -->
                     </div>
                     <!-- Blockquotes Ends -->
@@ -419,9 +429,9 @@
                     <ul class="simplefilter nav nav-pills d-block">
                         <!-- Filter Wrapper Items Starts -->
                         <li class="active" data-filter="all"><i class="fa fa-reorder"></i> All Projects</li>
-                        <li data-filter="1">Images</li>
+                        {% comment %} <li data-filter="1">Images</li>
                         <li data-filter="2">Videos</li>
-                        <li data-filter="3">External Links</li>
+                        <li data-filter="3">External Links</li> {% endcomment %}
                         <!-- Filter Wrapper Items Ends -->
                     </ul>
                 </nav>
@@ -431,22 +441,25 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
+                                {% for project in project%}
                                 <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="{% static 'assets/img/projects/project-1.jpg' %}" data-gal="magnific-pop-up[image]" title="Image project"><img class="img-fluid" src="{% static 'assets/img/projects/project-1.jpg' %}" alt="Image Project" /><span class="zoom-icon"></span></a>
+                                    <a class="image-wrap" href="{{project.image.url}}" data-gal="magnific-pop-up[image]" title="Image project"><img class="img-fluid" src="{{project.image.url}}" alt="Image Project" /><span class="zoom-icon"></span></a>
                                 </figure>
                                 <!-- Thumbnail Ends -->
                                 <!-- Caption Starts -->
                                 <div class="caption">
-                                    <h3>Single Image</h3>
-                                    <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                                    <h3>{{project.project_name}}</h3>
+                                    <p>{{project.disk}}</p>
                                 </div>
                                 <!-- Caption Ends -->
+                                {% endfor %}
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
+
+                            {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                                <div class="magnific-popup-gallery"> {% endcomment %}
                                 <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
+                                {% comment %} <figure class="thumbnail thumbnail__portfolio">
                                     <a class="image-wrap mfp-youtube" href="https://www.youtube.com/watch?v=0gv7OC9L2s8"><img class="img-fluid" src="{% static 'assets/img/projects/project-2.jpg' %}" alt="Gallery project" /><span class="zoom-icon video-icon"></span></a>
                                 </figure>
                                 <!-- Thumbnail Ends -->
@@ -457,13 +470,13 @@
                                 </div>
                                 <!-- Caption Ends -->
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                        </div> {% endcomment %}
+                        {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
                                 <figure class="thumbnail thumbnail__portfolio">
                                     <a class="image-wrap" href="{% static 'assets/img/projects/project-3.jpg' %}" data-gal="magnific-pop-up[gallery]" title="Gallery project"><img class="img-fluid" src="{% static 'assets/img/projects/project-3.jpg' %}" alt="Gallery project" /><span class="zoom-icon gallery-icon"></span></a>
-                                </figure>
+                                </figure> {% endcomment %}
                                 <a href="{% static 'assets/img/projects/project-1.jpg' %}" title="Gallery project" data-gal="magnific-pop-up[gallery]" style="display:none;"></a>
                                 <a href="{% static 'assets/img/projects/project-2.jpg' %}" title="Gallery project" data-gal="magnific-pop-up[gallery]" style="display:none;"></a>
                                 <a href="{% static 'assets/img/projects/project-3.jpg' %}" title="Gallery project" data-gal="magnific-pop-up[gallery]" style="display:none;"></a>
@@ -472,29 +485,29 @@
                                 <a href="{% static 'assets/img/projects/project-6.jpg' %}" title="Gallery project" data-gal="magnific-pop-up[gallery]" style="display:none;"></a>
                                 <!-- Thumbnail Ends -->
                                 <!-- Caption Starts -->
-                                <div class="caption">
+                                {% comment %} <div class="caption">
                                     <h3>Gallery Photos</h3>
                                     <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
                                 </div>
                                 <!-- Caption Ends -->
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="3">
+                        </div> {% endcomment %}
+                        {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="3">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
                                 <figure class="thumbnail thumbnail__portfolio">
                                     <a class="image-wrap" href="#" title="portfolio"><img class="img-fluid" src="{% static 'assets/img/projects/project-4.jpg' %}" alt="portfolio" /><span class="zoom-icon external-icon"></span></a>
-                                </figure>
+                                </figure> {% endcomment %}
                                 <!-- Thumbnail Ends -->
                                 <!-- Caption Starts -->
-                                <div class="caption">
+                                {% comment %} <div class="caption">
                                     <h3>External Link</h3>
                                     <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
                                 </div>
                                 <!-- Caption Ends -->
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                        </div> {% endcomment %}
+                        {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
                                 <figure class="thumbnail thumbnail__portfolio">
@@ -510,9 +523,9 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
+                            <div class="magnific-popup-gallery"> {% endcomment %}
                                 <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
+                                {% comment %} <figure class="thumbnail thumbnail__portfolio">
                                     <a class="image-wrap mfp-youtube" href="https://www.youtube.com/watch?v=O_C5CN1L3Xo"><img class="img-fluid" src="{% static 'assets/img/projects/project-6.jpg' %}" alt="Gallery project" /><span class="zoom-icon video-icon"></span></a>
                                 </figure>
                                 <!-- Thumbnail Ends -->
@@ -523,8 +536,8 @@
                                 </div>
                                 <!-- Caption Ends -->
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                        </div> {% endcomment %}
+                        {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
                                 <figure class="thumbnail thumbnail__portfolio">
@@ -535,11 +548,11 @@
                                 <div class="caption">
                                     <h3>Single Image</h3>
                                     <p>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
-                                </div>
+                                </div> {% endcomment %}
                                 <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            {% comment %} </div> {% endcomment %}
+                        {% comment %} </div> {% endcomment %}
+                        {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
                                 <figure class="thumbnail thumbnail__portfolio">
@@ -553,8 +566,8 @@
                                 </div>
                                 <!-- Caption Ends -->
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                        </div> {% endcomment %}
+                        {% comment %} <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
                             <div class="magnific-popup-gallery">
                                 <!-- Thumbnail Starts -->
                                 <figure class="thumbnail thumbnail__portfolio">
@@ -571,7 +584,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> {% endcomment %}
             <!-- Container Ends -->
         </section>
         <!-- Portfolio Section Ends -->
@@ -593,36 +606,36 @@
                             <div class="col-md-3 col-sm-6">
                                 <i class="fa fa-briefcase"></i>
                                 <h2>
-                                    <span><strong class="badges-counter">77</strong>+</span>
+                                    <span><strong class="badges-counter">{{settings.project}}</strong>+</span>
                                 </h2>
-                                <h4>Projects</h4>
+                                <h4>Проэктов</h4>
                             </div>
                             <!-- Fact Badge Item Ends -->
                             <!-- Fact Badge Item Starts -->
                             <div class="col-md-3 col-sm-6">
                                 <i class="fa fa-clock-o"></i>
                                 <h2>
-                                    <span><strong class="badges-counter">80</strong>+</span>
+                                    <span><strong class="badges-counter">{{settings.hours_work}}</strong>+</span>
                                 </h2>
-                                <h4>Hours Work</h4>
+                                <h4>Рабочих часов</h4>
                             </div>
                             <!-- Fact Badge Item Ends -->
                             <!-- Fact Badge Item Starts -->
                             <div class="col-md-3 col-sm-6">
                                 <i class="fa fa-home"></i>
                                 <h2>
-                                    <span><strong class="badges-counter">18</strong>+</span>
+                                    <span><strong class="badges-counter">{{settings.office}}</strong>+</span>
                                 </h2>
-                                <h4>Offices</h4>
+                                <h4>Офисов</h4>
                             </div>
                             <!-- Fact Badge Item Ends -->
                             <!-- Fact Badge Item Starts -->
                             <div class="col-md-3 col-sm-6">
                                 <i class="fa fa-user"></i>
                                 <h2>
-                                    <span><strong class="badges-counter">67</strong>+</span>
+                                    <span><strong class="badges-counter">{{settings.clints}}</strong>+</span>
                                 </h2>
-                                <h4>Clients</h4>
+                                <h4>Клиентов</h4>
                             </div>
                             <!-- Fact Badge Item Ends -->
                         </div>
@@ -860,15 +873,15 @@
                 <div class="container">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>Video</span> Promo</h1>
-                        <h4>Made with love for you</h4>
+                        <h1><span>Промо </span>Видео</h1>
+                        <h4>СДЕЛАНО С ЛЮБОВЬЮ ДЛЯ ВАС</h4>
                     </div>
                     <!-- Main Heading Ends -->
                     <div class="video-content">
-                        <p class="text-center">We’re developing a number of special projects if interested,<br> Don't hesitate to see the promo video</p>
+                        <p class="text-center">Если интересно, мы разрабатываем ряд специальных проектов.,<br> Dе стесняйтесь посмотреть промо-ролик.</p>
                         <!-- Video Play Starts -->
                         <div class="magnific-popup-gallery">
-                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" href="https://www.youtube.com/watch?v=0gv7OC9L2s8"></a></div>
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" href={{settings.video}}></a></div>
                         </div>
                         <!-- Video Play Ends -->
                     </div>
@@ -883,8 +896,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>Contact</span> Us</h1>
-                    <h4>Get in Touch</h4>
+                    <h1><span>контакты</span></h1>
+                    <h4> Cвязатся</h4>
                 </div>
                 <!-- Main Heading Starts -->
                 <!-- Divider Starts -->
@@ -938,8 +951,8 @@
                 <div class="container">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>Send Us</span> an email</h1>
-                        <h4>We are very responsive to messages</h4>
+                        <h1><span>отправвь нам </span>письмо</h1>
+                        <h4>Мы очень оперативно реагируем на сообщения</h4>
                     </div>
                     <!-- Main Heading Ends -->
                     <div class="form-container">
@@ -949,7 +962,7 @@
                                 <!-- First Name Field Starts -->
                                 <div class="col-md-6 form-group custom-form-group">
                                     <span class="input custom-input">
-										<input placeholder="First Name" class="input-field custom-input-field" id="firstname" name="firstname" type="text" required data-error="NEW ERROR MESSAGE">
+										<input placeholder="Имя" class="input-field custom-input-field" id="firstname" name="firstname" type="text" required data-error="НОВОЕ СООБЩЕНИЕ ОБ ОШИБКЕ">
 										<label class="input-label custom-input-label" >
 											<i class="fa fa-user icon icon-field"></i>
 										</label>
@@ -959,7 +972,7 @@
                                 <!-- Last Name Field Starts -->
                                 <div class="col-md-6 form-group custom-form-group">
                                     <span class="input custom-input">
-										<input placeholder="Last Name" class="input-field custom-input-field" id="lastname" name="lastname" type="text" required>
+										<input placeholder="Фамилия" class="input-field custom-input-field" id="lastname" name="lastname" type="text" required>
 										<label class="input-label custom-input-label" >
 											<i class="fa fa-user-o icon icon-field"></i>
 										</label>
@@ -968,7 +981,7 @@
                                 <!-- Last Name Field Ends -->
                                 <!-- Message Field Starts -->
                                 <div class="form-group custom-form-group col-md-12">
-                                    <textarea placeholder="Message" id="message" name="message" cols="45" rows="7" required></textarea>
+                                    <textarea placeholder="Сообщение" id="message" name="message" cols="45" rows="7" required></textarea>
                                 </div>
                                 <!-- Message Field Ends -->
                                 <!-- Email Name Field Starts -->
@@ -983,7 +996,7 @@
                                 <!-- Email Name Field Ends -->
                                 <!-- Submit Button Starts -->
                                 <div class="col-md-6 submit-form">
-                                    <button id="form-submit" name="submit" type="submit" class="custom-button" title="Send">Send Message</button>
+                                    <button id="form-submit" name="submit" type="submit" class="custom-button" title="Send">Отправить сообщение</button>
                                 </div>
                                 <!-- Submit Button Ends -->
                                 <!-- Form Submit Message Starts -->
@@ -1021,7 +1034,7 @@
             <!-- Container Starts -->
             <div class="container">
                 <!-- Copyright Text Starts -->
-                <p>Salimo - One Page Parallax</p>
+                <p>CodeTech - One Page Parallax</p>
                 <p>
                     &copy; Copyright 2017 Salimo & Designed with <span class="heart">&#10084;</span> by <a target="_blank" href="http://themeforest.net/user/celtano/">Celtano</a>
                 </p>
